@@ -1,0 +1,21 @@
+<InterfaceServ>:
+    orientation: 'vertical'
+
+    Label:
+        id: _connect
+        text: 'Connect'
+        size_hint: 1, .1
+
+    TextInput:
+        id: _messenger
+        size_hint: 1, .6
+
+    TextInput:
+        id: _messege_text
+        size_hint: 1, .2
+
+    Button:
+        id: _send_messege
+        text: 'send'
+        size_hint: 1, .1
+        on_press: self.parent.send(_messege_text.text)
